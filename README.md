@@ -1,0 +1,1 @@
+# mkdocs-my-personal-document

@@ -17,16 +17,15 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline 
         name: Switch to dark mode
-      primary: teal
-      accent: purple 
+      primary: deep purple
+      accent: teal
     - scheme: slate 
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode    
       primary: teal
-      accent: lime
+      accent: deep purple
 
-extra:
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/kittitasoak
@@ -51,6 +50,13 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+
+nav:
+  - Welcome to my Documentation: index.md
+  - Marketing: Marketing.md
+  - Cybersecurity: Cybersecurity.md
+  - Project Management: Project_management.md
+  - Others: Others.md
 
 copyright: |
   &copy; 2023 <a href="https://github.com/kittitasoak"  target="_blank" rel="noopener">Kittitas Kasetsin</a>

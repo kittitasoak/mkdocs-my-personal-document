@@ -21,3 +21,11 @@ jobs:
       - run: pip install mkdocs-material
       - run: pip install pillow cairosvg
       - run: mkdocs gh-deploy --force
+      
+      # ✅ ติดตั้ง Node.js ก่อน
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18  # ใช้เวอร์ชันล่าสุดที่เสถียร
+
+      # ✅ ติดตั้ง glightbox
+      - run: npm install glightbox

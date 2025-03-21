@@ -26,13 +26,15 @@ theme:
       primary: teal
       accent: deep purple
 
+extra:
   social:
-    - icon: fontawesome/brands/github-alt
+    - icon: fontawesome/brands/github
       link: https://github.com/kittitasoak
     - icon: fontawesome/brands/twitter
-      link: .
+      link: https://twitter.com/yourhandle
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/kittitas/
+
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -50,13 +52,28 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption 
+
+plugins:
+  - glightbox
+  - search
 
 nav:
   - Welcome to my Documentation: index.md
-  - Marketing: Marketing.md
-  - Cybersecurity: Cybersecurity.md
-  - Project Management: Project_management.md
-  - Others: Others.md
+  - Marketing: 
+      - Tools: assets\Marketing\Marketing_tools.md
+      - Knowledge: assets\Marketing\Marketing_knowledge.md
+  - Cybersecurity:
+      - Tools: assets\Cybersecurity\Cybersecurity_tools.md
+      - Knowledge: assets\Cybersecurity\Cybersecurity_knowledge.md
+  - Project Management:
+      - Tools: assets\Project Management\Project_management_tools.md
+      - Knowledge: assets\Project Management\Project_Management_knowledge.md
+  - Others:
+      - Tools: assets\Others\Others_tools.md
+      - Knowledge: assets\Others\Others_knowledge.md
 
 copyright: |
   &copy; 2023 <a href="https://github.com/kittitasoak"  target="_blank" rel="noopener">Kittitas Kasetsin</a>
